@@ -26,4 +26,6 @@ public abstract class Product {
         this.price = price;
     }
     public abstract double getDiscount();
+    public abstract double addDiscount(int persent);
+    public abstract String toString();
 }

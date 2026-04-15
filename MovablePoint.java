@@ -30,6 +30,7 @@ public class MovablePoint implements Movable{
     @Override
     public void moveUp() {
         y+=ySpeed;
+
     }
 
     @Override
@@ -45,6 +46,10 @@ public class MovablePoint implements Movable{
     @Override
     public void moveRight() {
         x+=xSpeed;
+    }
+    //new method
+    public void printCordinint (){
+        System.out.println("x  "+x+ " y  "+y);
     }
 
     public void setX(int x) {

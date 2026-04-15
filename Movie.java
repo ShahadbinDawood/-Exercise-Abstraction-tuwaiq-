@@ -25,4 +25,14 @@ public class Movie extends Product{
     public double getDiscount() {
         return getPrice()-(getPrice()*0.15);
     }
+    //new method
+    public double addDiscount(int persent ) {
+        double p = (double)persent/100;
+        return getPrice()-(getPrice()*p);
+    }
+
+    @Override
+    public String toString() {
+        return getName()+" directed by  "+director+" price is  "+getPrice();
+    }
 }

@@ -22,4 +22,14 @@ public class Book extends Product{
     public double getDiscount() {
         return getPrice()-(getPrice()*0.2);
     }
+    //added method
+    public double addDiscount(int persent ) {
+        double p = (double) persent /100;
+        return getPrice()-(getPrice()*p);
+    }
+
+    @Override
+    public String toString() {
+        return getName()+" is written by "+author + "priced at "+getPrice();
+    }
 }
